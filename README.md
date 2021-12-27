@@ -24,7 +24,7 @@
 <br>
 
 - Deploy
-  - Vercel
+  - netlify
 
 ## 3. 프로젝트 구조와 개발 일정
 
