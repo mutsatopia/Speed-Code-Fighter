@@ -1,5 +1,5 @@
 // const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
-const RANDOM_QUOTE_API_URL = `<div>\n\u00a0\u00a0\u00a0window\n</div>`;
+const RANDOM_QUOTE_API_URL = `html {\n\u00a0\u00a0\u00a0font-family: sans-serif;\n\u00a0\u00a0\u00a0-webkit-text-size-adjust: 100%;\n\u00a0\u00a0\u00a0-ms-text-size-adjust: 100%\n}\nbody {\n\u00a0\u00a0\u00a0margin: 0\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n\u00a0\u00a0\u00a0display: block\n}\naudio,\ncanvas,\nprogress,\nvideo {\n\u00a0\u00a0\u00a0display: inline-block;\n\u00a0\u00a0\u00a0vertical-align: baseline\n}\naudio:not([controls]) {\n\u00a0\u00a0\u00a0display: none;\n\u00a0\u00a0\u00a0height: 0\n}\n[hidden],\ntemplate {\n\u00a0\u00a0\u00a0display: none\n}\na {\n\u00a0\u00a0\u00a0background-color: transparent\n}\na:active,\na:hover {\n\u00a0\u00a0\u00a0outline: 0\n}\n`;
 const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
