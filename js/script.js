@@ -11,27 +11,23 @@ function startGame() {
   const arrayValue = quoteInputElement.value.split("");
   let correct = true;
 
-
-  [...arrayQuote].filter((element)=>element.innerText !="\u00a0")
-  .forEach((characterSpan, i) => {
-    const character = arrayValue[i];
-    if (character == " ") {
-      console.log("나는 띄어쓰기");
-    } else if (character == "\n") {
-      console.log("나는 엔터");
-    } else if (character == null) {
-      characterSpan.classList.remove("correct");
-      characterSpan.classList.remove("incorrect");
-      correct = false;
-    } else if (character === characterSpan.innerText) {
-      characterSpan.classList.add("correct");
-      characterSpan.classList.remove("incorrect");
-    } else {
-      characterSpan.classList.remove("correct");
-      characterSpan.classList.add("incorrect");
-      correct = false;
-    }
-  });
+  [...arrayQuote]
+    .filter((element) => element.innerText != "\u00a0")
+    .forEach((characterSpan, i) => {
+      const character = arrayValue[i];
+      if (character == null) {
+        characterSpan.classList.remove("correct");
+        characterSpan.classList.remove("incorrect");
+        correct = false;
+      } else if (character === characterSpan.innerText) {
+        characterSpan.classList.add("correct");
+        characterSpan.classList.remove("incorrect");
+      } else {
+        characterSpan.classList.remove("correct");
+        characterSpan.classList.add("incorrect");
+        correct = false;
+      }
+    });
 
   if (correct) renderNewQuote();
 }
