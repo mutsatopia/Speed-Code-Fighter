@@ -10,7 +10,10 @@ function startGame() {
   const arrayQuote = quoteDisplayElement.querySelectorAll("span");
   const arrayValue = quoteInputElement.value.split("");
   let correct = true;
-  arrayQuote.forEach((characterSpan, i) => {
+
+
+  [...arrayQuote].filter((element)=>element.innerText !="\u00a0")
+  .forEach((characterSpan, i) => {
     const character = arrayValue[i];
     if (character == " ") {
       console.log("나는 띄어쓰기");
