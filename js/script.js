@@ -52,14 +52,14 @@ async function renderNewQuote() {
 }
 
 let startTime;
-var timeLimit = 60;
+var timeLimit = 1;
 function startTimer() {
-  timerElement.innerText = 0;
+  timerElement.innerText = 60;
   startTime = new Date();
   setInterval(() => {
-    timer.innerText = Math.floor((new Date() - startTime) / 1000);
+    timer.innerText = 60 - Math.floor((new Date() - startTime) / 1000);
 
-    if (timer.innerText > timeLimit) {
+    if (timer.innerText < timeLimit) {
       timer.innerText = "You lose 👎";
       quoteInputElement.removeEventListener("input", startGame);
     }
