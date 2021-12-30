@@ -6,6 +6,7 @@
 @import "./variables.css";
 
 @import "./components/header.css";
+@import "./components/keyboard.css";
 
 body {
   display: flex;
