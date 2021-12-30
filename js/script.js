@@ -32,6 +32,9 @@ function startGame() {
     .forEach((characterSpan, i) => {
       const character = arrayValue[i];
 
+      if(characterSpan.innerText == "\n"){
+        characterSpan.classList.add("enterBox")
+      }
       if (character == null) {
         characterSpan.classList.remove("correct");
         characterSpan.classList.remove("incorrect");
