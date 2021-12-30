@@ -6,5 +6,70 @@
 @import "./variables.css";
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   font-family: var(--main-font);
+}
+
+.cont-browser {
+  width: 1200px;
+  height: 600px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cont-browser .header {
+  border-bottom: 3px solid #333;
+}
+.header .title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 8px 0;
+  border-bottom: 3px solid #333;
+}
+.title-bar .list-circle {
+  display: flex;
+  position: absolute;
+  right: 10px;
+}
+.title-bar .list-circle li {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header .list-dropdown {
+  display: flex;
+}
+.list-dropdown .btn-dropdown {
+  width: 150px;
+  padding: 8px;
+  border: 0;
+  background: url("../images/caret-down-fill.svg") no-repeat 95% 50%;
+  font-family: inherit;
+  text-align: left;
+}
+.list-dropdown .btn-dropdown:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.list-dropdown .sub-list {
+  display: none;
+  position: absolute;
+  width: 150px;
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.sub-list button[class^="btn"] {
+  width: 100%;
+  padding: 8px;
+  border: 0;
+  text-align: left;
+}
+.sub-list button[class^="btn"]:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
