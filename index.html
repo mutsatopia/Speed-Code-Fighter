@@ -4,8 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <style></style>
+    <title>Street Code Fighter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="cont-browser">
+      <header>
+        <div class="title-bar">
+          <h1><span>로고</span> Street Code Fighter</h1>
+          <ul class="list-circle">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <ul class="list-dropdown">
+          <li>
+            <button class="btn-dropdown">프로그래밍 언어</button>
+            <ul>
+              <li><button>HTML</button></li>
+              <li><button>CSS</button></li>
+              <li><button>JavaScript</button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="btn-dropdown">키보트 테마</button>
+            <ul>
+              <li><button>White(default)</button></li>
+              <li><button>Black</button></li>
+              <li><button>Coral Sea</button></li>
+              <li><button>Avocado</button></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+    <!-- <h2 class="level">클래스명만 사용해주시면 됩니다!</h2> -->
+    <div class="timer" id="timer"></div>
+    <div class="container">
+    <div class="quote-display" id="quoteDisplay"></div>
+    <textarea id="quoteInput" class="quote-input" autofocus ></textarea>
+
+    <div class="cont-keybord">
+        <div class="keybord-row">
+            <span class="key-wavy-dash key-backtick">&#8764;<br>&#96;</span>
+            <span class="key num1 on">&#33;<br>1</span>
+            <span class="key num2">@<br>2</span>
+            <span class="key num3">#<br>3</span>
+            <span class="key num4">$<br>4</span>
+            <span class="key num5">%<br>5</span>
+            <span class="key num6">^<br>6</span>
+            <span class="key num7">&<br>7</span>
+            <span class="key num8">*<br>8</span>
+            <span class="key num9">&#40;<br>9</span>
+            <span class="key num0">&#41;<br>0</span>
+            <span class="key key-dash">&#45;<br>&#95;</span>
+            <span class="key key-plus">&#43;<br>&#61;</span>
+            <span class="key key-backspace">Backspace</span>
+        </div>
+        <div class="keybord-row">
+            <span class="key-tab">Tab ↹</span>
+            <span class="key-q">Q</span>
+            <span class="key-w">W</span>
+            <span class="key-e">E</span>
+            <span class="key-r">R</span>
+            <span class="key-t">T</span>
+            <span class="key-u">Y</span>
+            <span class="key-i">U</span>
+            <span class="key-y">I</span>
+            <span class="key-o">O</span>
+            <span class="key-p">P</span>
+            <span class="key">&#123;<br>&#91;</span>
+            <span class="key">&#125;<br>&#93;</span>
+            <span class="key">&#124;<br>&#92;</span>
+        </div>
+        <div class="keybord-row">
+            <span class="key-caps">Caps Lock</span>
+            <span class="key-a">A</span>
+            <span class="key-s">S</span>
+            <span class="key-d">D</span>
+            <span class="key-f">F</span>
+            <span class="key-g">G</span>
+            <span class="key-h">H</span>
+            <span class="key-j">J</span>
+            <span class="key-k">K</span>
+            <span class="key-l">L</span>
+            <span class="key">&#58;<br>&#59;</span>
+            <span class="key">&#34;<br>&#39;</span>
+            <span class="key-enter">↵ Enter</span>
+        </div>
+        <div class="keybord-row">
+            <span class="key-shift-left">Shift ⇧</span>
+            <span class="key-z">Z</span>
+            <span class="key-x">X</span>
+            <span class="key-c">C</span>
+            <span class="key-v">V</span>
+            <span class="key-b">B</span>
+            <span class="key-n">N</span>
+            <span class="key-m">M</span>
+            <span class="key">&#60;<br>&#44;</span>
+            <span class="key">&#62;<br>&#46;</span>
+            <span class="key">&#63;<br>&#47;</span>
+            <span class="key-shift-right">⇧ Shift</span>
+        </div>
+        <div class="keybord-row">
+            <span class="key-ctrl">Ctrl</span>
+            <span class="key-fn">Fn</span>
+            <span class="key-win">win</span>
+            <span class="key-alt">Alt</span>
+            <span class="key-space">Space Bar</span>
+            <span class="key-alt">Alt</span>
+            <span class="key-ctrl">Ctrl</span>
+            <span class="key-left">&#8592;</span>
+            <span class="key-up key-down"><span class="up">&#8593;</span><span class="down">&#8595;</span></span>
+            <span class="key-right">&#8594;</span>
+        </div>
+    </div>
+  </main>
+  </body>
 </html>
