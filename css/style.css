@@ -8,6 +8,7 @@
 @import "./components/header.css";
 @import "./components/document.css";
 @import "./components/keyboard.css";
+@import "./components/popup.css";
 
 body {
   display: flex;
