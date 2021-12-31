@@ -4,7 +4,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("../../images/dot.svg");
+  background-color: #f8f8f8;
+  /* background: url("../../images/dot.svg"); */
 }
 
 .container {
@@ -91,8 +92,10 @@
 .cont-step .btn-restart {
   width: 100%;
   padding: 8px 0;
-  border: 0;
-  background-color: #ff3f28;
-  color: #fff;
+  background: none;
   font-family: var(--main-font);
+}
+.cont-step .btn-restart:hover {
+  background-color: #000;
+  color: #fff;
 }
