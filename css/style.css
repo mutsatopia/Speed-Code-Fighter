@@ -5,6 +5,23 @@
 @import "./reset.css";
 @import "./variables.css";
 
+@import "./components/header.css";
+@import "./components/document.css";
+@import "./components/keyboard.css";
+@import "./components/popup.css";
+
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   font-family: var(--main-font);
+}
+
+.cont-browser {
+  position: relative;
+  min-width: 1200px;
+  width: 1200px;
+  height: 650px;
+  border: var(--border);
 }
