@@ -21,20 +21,22 @@
         </div>
         <ul class="list-dropdown">
           <li>
-            <button class="btn-dropdown">프로그래밍 언어</button>
+            <button type="button" class="btn-dropdown">프로그래밍 언어</button>
             <ul class="sub-list">
-              <li><button class="btn-lan">HTML</button></li>
-              <li><button class="btn-lan">CSS</button></li>
-              <li><button class="btn-lan">JavaScript</button></li>
+              <li><button type="button" class="btn-lan">HTML</button></li>
+              <li><button type="button" class="btn-lan">CSS</button></li>
+              <li><button type="button" class="btn-lan">JavaScript</button></li>
             </ul>
           </li>
           <li>
             <button class="btn-dropdown">키보드 테마</button>
             <ul class="sub-list">
-              <li><button class="btn-them">White(default)</button></li>
-              <li><button class="btn-them">Black</button></li>
-              <li><button class="btn-them">Coral Sea</button></li>
-              <li><button class="btn-them">Avocado</button></li>
+              <li>
+                <button type="button" class="btn-them">White(default)</button>
+              </li>
+              <li><button type="button" class="btn-them">Black</button></li>
+              <li><button type="button" class="btn-them">Coral Sea</button></li>
+              <li><button type="button" class="btn-them">Avocado</button></li>
             </ul>
           </li>
         </ul>
@@ -136,5 +138,63 @@
         </div>
       </section>
     </main>
+
+    <div class="cont-popup">
+      <div class="box-popup popup-start">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <p class="desc-game">게임에 대한 설명</p>
+          <ul class="list-btn">
+            <li>
+              <button type="button" class="btn-dropdown">
+                프로그래밍 언어
+              </button>
+              <ul class="sub-list">
+                <li><button type="button" class="btn-lan">HTML</button></li>
+                <li><button type="button" class="btn-lan">CSS</button></li>
+                <li>
+                  <button type="button" class="btn-lan">JavaScript</button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button type="button" class="btn-start">게임 시작하기</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-popup popup-win">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <p class="txt-result">You Win!</p>
+          <p class="desc-game">게임에 대한 설명</p>
+          <button type="button" class="btn-next">다음 레벨 도전하기</button>
+        </div>
+      </div>
+      <div class="box-popup popup-lose">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <p class="txt-result">Game Over</p>
+          <p class="desc-game">게임에 대한 설명</p>
+          <ul class="list-btn">
+            <li>
+              <button type="button" class="btn-start">처음부터 다시하기</button>
+            </li>
+            <li>
+              <button type="button" class="btn-start">다시 도전하기</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
