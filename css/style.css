@@ -20,8 +20,8 @@ body {
 
 .cont-browser {
   position: relative;
-  min-width: 1200px;
-  width: 1200px;
+  min-width: 1050px;
+  width: 1050px;
   height: 650px;
   border: var(--border);
 }

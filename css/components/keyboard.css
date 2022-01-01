@@ -1,91 +1,198 @@
-.cont-keybord {
-  margin-top: 200px;
-  padding: 10px 20px;
-  border-radius: 20px;
+.cont-keyboard {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 5px;
   background-color: #fff;
+  box-shadow: var(--shadow);
 }
-.keybord-row {
+.cont-keyboard .keyboard-row {
   display: flex;
   justify-content: center;
 }
-.keybord-row > span {
+.keyboard-row span {
   display: inline-block;
   width: 50px;
   height: 50px;
-  margin: 3px;
+  margin: 1px;
   box-sizing: border-box;
   border: 1px solid #333;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #333;
   font-weight: bold;
+  line-height: 1.3;
   text-align: center;
 }
-.keybord-row .key-backspace,
-.keybord-row .key-tab,
-.keybord-row .key-caps,
-.keybord-row .key-enter,
-.keybord-row .key-shift-left,
-.keybord-row .key-shift-right {
-  width: 80px;
-  font-size: 12px;
-  line-height: 50px;
-}
-.keybord-row .key-caps {
-  width: 90px;
-}
-.keybord-row .key-enter {
-  width: 100px;
-}
-.keybord-row .key-shift-left {
-  width: 110px;
-}
-.keybord-row .key-shift-right {
-  width: 130px;
-}
-.keybord-row:last-child .key-ctrl,
-.keybord-row:last-child .key-fn,
-.keybord-row:last-child .key-win,
-.keybord-row:last-child .key-alt,
-.keybord-row:last-child .key-space,
-.keybord-row:last-child .key-left,
-.keybord-row:last-child .key-up,
-.keybord-row:last-child .key-right {
+.keyboard-row .key-backspace,
+.keyboard-row .key-tab,
+.keyboard-row .key-caps,
+.keyboard-row .key-enter,
+.keyboard-row .key-shift-left,
+.keyboard-row .key-shift-right,
+.keyboard-row .key-ctrl,
+.keyboard-row .key-fn,
+.keyboard-row .key-win,
+.keyboard-row .key-alt,
+.keyboard-row .key-space,
+.keyboard-row .key-ke,
+.keyboard-row .key-insert,
+.keyboard-row .key-home,
+.keyboard-row .key-delete,
+.keyboard-row .key-end {
   font-size: 13px;
   line-height: 50px;
 }
-.keybord-row:last-child .key-space {
-  width: 300px;
+.keyboard-row .key-up,
+.keyboard-row .key-left,
+.keyboard-row .key-down,
+.keyboard-row .key-right {
+  font-size: 20px;
+  line-height: 50px;
 }
-.key-up span {
-  display: block;
-  width: 100%;
-  height: 50%;
-  color: #333;
+.keyboard-row .key-backspace,
+.keyboard-row .key-tab {
+  width: 90px;
+}
+.keyboard-row .key-caps {
+  width: 95px;
+}
+.keyboard-row .key-enter {
+  width: 97px;
+}
+.keyboard-row .key-shift-left {
+  width: 114px;
+}
+.keyboard-row .key-shift-right {
+  width: 130px;
+}
+.keyboard-row .key-space {
+  width: 350px;
+}
+.keyboard-row .key-page-up,
+.keyboard-row .key-page-down {
+  font-size: 13px;
   line-height: 25px;
 }
-.key-up span:first-child {
-  height: calc(50%-1px);
-  border-bottom: 1px solid #333;
+.keyboard-row .key-empty {
+  border-color: transparent;
 }
-
-.keybord-row > span.on {
-  background-color: rgba(45, 66, 99, 0.9);
+.keyboard-row > span.on {
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
 
 /* black theme */
-.cont-keybord.black {
+.cont-keyboard.black {
   background-color: #222;
 }
-.cont-keybord.black span {
+.cont-keyboard.black span {
   border-color: transparent;
-  background-color: #111;
-  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #191919;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
   color: #ccc;
 }
-.cont-keybord.black .key-up span:first-child {
-  border-color: rgba(255, 255, 255, 0.2);
+.cont-keyboard.black .keyboard-row > span.on {
+  background-color: rgba(255, 255, 255, 0.3);
 }
-.cont-keybord.black .keybord-row > span.on {
-  background-color: rgba(255, 255, 255, 0.2);
+.cont-keyboard.black .key-empty {
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* coral-sea theme */
+.cont-keyboard.coral-sea {
+  background-color: var(--deep-sea);
+}
+.cont-keyboard.coral-sea span {
+  border-color: #222;
+  background-color: #fff;
+  color: var(--deep-sea);
+}
+.cont-keyboard.coral-sea .key-backspace,
+.cont-keyboard.coral-sea .keyboard-row .key-tab,
+.cont-keyboard.coral-sea .keyboard-row .key-caps,
+.cont-keyboard.coral-sea .keyboard-row .key-enter,
+.cont-keyboard.coral-sea .keyboard-row .key-shift-left,
+.cont-keyboard.coral-sea .keyboard-row .key-shift-right,
+.cont-keyboard.coral-sea .keyboard-row .key-ctrl,
+.cont-keyboard.coral-sea .keyboard-row .key-fn,
+.cont-keyboard.coral-sea .keyboard-row .key-win,
+.cont-keyboard.coral-sea .keyboard-row .key-alt,
+.cont-keyboard.coral-sea .keyboard-row .key-ke,
+.cont-keyboard.coral-sea .keyboard-row .key-insert,
+.cont-keyboard.coral-sea .keyboard-row .key-home,
+.cont-keyboard.coral-sea .keyboard-row .key-delete,
+.cont-keyboard.coral-sea .keyboard-row .key-end,
+.cont-keyboard.coral-sea .keyboard-row .key-page-up,
+.cont-keyboard.coral-sea .keyboard-row .key-page-down {
+  background-color: var(--sea);
+  color: var(--coral);
+}
+.cont-keyboard.coral-sea .keyboard-row .key-space,
+.cont-keyboard.coral-sea .keyboard-row .key-up,
+.cont-keyboard.coral-sea .keyboard-row .key-left,
+.cont-keyboard.coral-sea .keyboard-row .key-down,
+.cont-keyboard.coral-sea .keyboard-row .key-right {
+  background-color: var(--coral);
+  color: #fff;
+}
+
+.cont-keyboard.coral-sea .keyboard-row > span.on {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.cont-keyboard.coral-sea .key-empty {
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* avocado theme */
+.cont-keyboard.avocado {
+  background-color: var(--deep-green);
+}
+.cont-keyboard.avocado span {
+  border-color: #222;
+  background-color: #fff;
+  color: var(--deep-green);
+}
+.cont-keyboard.avocado .key-backspace,
+.cont-keyboard.avocado .keyboard-row .key-tab,
+.cont-keyboard.avocado .keyboard-row .key-caps,
+.cont-keyboard.avocado .keyboard-row .key-enter,
+.cont-keyboard.avocado .keyboard-row .key-shift-left,
+.cont-keyboard.avocado .keyboard-row .key-shift-right,
+.cont-keyboard.avocado .keyboard-row .key-ctrl,
+.cont-keyboard.avocado .keyboard-row .key-fn,
+.cont-keyboard.avocado .keyboard-row .key-win,
+.cont-keyboard.avocado .keyboard-row .key-alt,
+.cont-keyboard.avocado .keyboard-row .key-ke,
+.cont-keyboard.avocado .keyboard-row .key-insert,
+.cont-keyboard.avocado .keyboard-row .key-home,
+.cont-keyboard.avocado .keyboard-row .key-delete,
+.cont-keyboard.avocado .keyboard-row .key-end,
+.cont-keyboard.avocado .keyboard-row .key-page-up,
+.cont-keyboard.avocado .keyboard-row .key-page-down {
+  background-color: var(--green);
+  color: var(--yellow);
+}
+.cont-keyboard.avocado .keyboard-row .key-space,
+.cont-keyboard.avocado .keyboard-row .key-up,
+.cont-keyboard.avocado .keyboard-row .key-left,
+.cont-keyboard.avocado .keyboard-row .key-down,
+.cont-keyboard.avocado .keyboard-row .key-right {
+  background-color: var(--yellow);
+  color: #fff;
+}
+
+.cont-keyboard.avocado .keyboard-row > span.on {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.cont-keyboard.avocado .key-empty {
+  border: 0;
+  background: none;
+  box-shadow: none;
 }
