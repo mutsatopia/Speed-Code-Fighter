@@ -18,7 +18,7 @@
   background-color: #fff;
   transform: translate(-50%, -50%);
 }
-/* .cont-popup .popup-start, */
+.cont-popup .popup-start,
 .cont-popup .popup-win,
 .cont-popup .popup-lose {
   display: none;
@@ -110,4 +110,13 @@
 .popup-win .btn-next:hover {
   background-color: #000;
   color: #fff;
+}
+
+.cont-popup.show {
+  display: block;
+}
+.cont-popup.show .popup-start.show,
+.cont-popup.show .popup-win.show,
+.cont-popup.show .popup-lose.show {
+  display: block;
 }
