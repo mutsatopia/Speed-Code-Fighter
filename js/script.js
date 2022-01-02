@@ -16,6 +16,9 @@ const levelElement = document.querySelector(".level");
 
 let level = 0;
 
+window.addEventListener('click',function() {
+  quoteInputElement.focus()
+})
 function startGame() {
   const arrayQuote = quoteDisplayElement.querySelectorAll("span");
   const arrayValue = quoteInputElement.value.split("");
