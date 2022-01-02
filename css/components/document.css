@@ -64,6 +64,10 @@
 .correct.cursor,
 .incorrect.cursor {
   background-color: #f2b705;
+  color: #fff;
+}
+.enterBox {
+  padding: 0 5px;
 }
 
 .container .cont-step {
