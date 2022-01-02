@@ -61,6 +61,10 @@
 .incorrect {
   background-color: #e94057;
 }
+.correct.cursor,
+.incorrect.cursor {
+  background-color: #f2b705;
+}
 
 .container .cont-step {
   grid-column: 2 / 3;
