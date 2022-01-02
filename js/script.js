@@ -32,8 +32,8 @@ function startGame() {
     .forEach((characterSpan, i) => {
       const character = arrayValue[i];
 
-      if(characterSpan.innerText == "\n"){
-        characterSpan.classList.add("enterBox")
+      if (characterSpan.innerText == "\n") {
+        characterSpan.classList.add("enterBox");
       }
       if (character == null) {
         characterSpan.classList.remove("correct");
@@ -58,7 +58,14 @@ function startGame() {
   arrayCurrent = quoteDisplayElement.querySelectorAll(".correct, .incorrect");
 
   let cursor_current = [...arrayCurrent].length - 1;
-  console.log(cursor_late, cursor_current);
+
+  console.log(cursor_current, [...arrayQuote].length - 1);
+
+  if (cursor_late === [...arrayQuote].length - 1) {
+    let a = document.querySelector("textarea");
+    a.value = a.value.slice(0, 5);
+  }
+
   if (cursor_late < cursor_current) {
     [...arrayCurrent].forEach((characterSpan, i) => {
       characterSpan.classList.remove("cursor");
