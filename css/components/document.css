@@ -1,0 +1,103 @@
+.document {
+  position: absolute;
+  top: 82px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.container .cont-quote {
+  grid-column: 1 / 2;
+  position: relative;
+  width: 100%;
+  height: 217px;
+  box-shadow: var(--shadow);
+}
+.cont-quote .quote-display {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.cont-quote .quote-input {
+  overflow-y: auto;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: calc(100% - 17px);
+  height: 100%;
+  padding: 0;
+  border: 0;
+  /* background-color: transparent; */
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  resize: none;
+  outline: none;
+  color: transparent;
+}
+
+.correct {
+  background-color: #a8ff78;
+}
+.incorrect {
+  background-color: #e94057;
+}
+.correct.cursor,
+.incorrect.cursor {
+  background-color: #f2b705;
+  color: #fff;
+}
+.enterBox {
+  padding: 0 5px;
+}
+
+.container .cont-step {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  font-size: 20px;
+}
+.cont-step .box-level {
+  text-align: center;
+}
+.cont-step .box-timer {
+  font-weight: bold;
+}
+.cont-step .box-timer p {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.cont-step .btn-restart {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  font-family: var(--main-font);
+}
+.cont-step .btn-restart:hover {
+  background-color: #000;
+  color: #fff;
+}

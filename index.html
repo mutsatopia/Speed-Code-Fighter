@@ -4,8 +4,230 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <style></style>
+    <title>Speed Code Fighter</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="cont-browser">
+      <header class="header">
+        <div class="title-bar">
+          <h1>
+            <img src="images/logo.png" alt="로고" class="logo" /> Speed Code
+            Fighter
+          </h1>
+          <ul class="list-btn">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <ul class="list-dropdown">
+          <li>
+            <button type="button" class="btn-dropdown">프로그래밍 언어</button>
+            <ul class="sub-list">
+              <li><button type="button" class="btn-lan">HTML</button></li>
+              <li><button type="button" class="btn-lan">CSS</button></li>
+              <li><button type="button" class="btn-lan">JavaScript</button></li>
+            </ul>
+          </li>
+          <li>
+            <button class="btn-dropdown">키보드 테마</button>
+            <ul class="sub-list">
+              <li>
+                <button type="button" class="btn-them">White(default)</button>
+              </li>
+              <li><button type="button" class="btn-them">Black</button></li>
+              <li><button type="button" class="btn-them">Coral Sea</button></li>
+              <li><button type="button" class="btn-them">Avocado</button></li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+
+      <section class="document">
+        <h2 class="sr-only">타이핑 게임 화면</h2>
+        <div class="container">
+          <div class="cont-quote">
+            <div id="quoteDisplay" class="quote-display"></div>
+            <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+          </div>
+          <div class="cont-step">
+            <div class="box-level">레벨 <strong class="level">0</strong></div>
+            <div class="box-timer">
+              <span>Timer:</span>
+              <p><span class="timer" id="timer"></span> <span>초</span></p>
+            </div>
+            <button type="button" class="btn-restart">다시 시작하기</button>
+          </div>
+
+          <div class="cont-keyboard">
+            <div class="keyborad-col">
+              <div class="keyboard-row">
+                <span class="key-wavy-dash key-backtick"
+                  >&#8764;<br />&#96;</span
+                >
+                <span class="key-33 num1 on">&#33;<br />1</span>
+                <span class="key-64 num2">&#64;<br />2</span>
+                <span class="key-35 num3">&#35;<br />3</span>
+                <span class="key-36 num4">&#36;<br />4</span>
+                <span class="key-37 num5">&#37;<br />5</span>
+                <span class="key-94 num6">&#94;<br />6</span>
+                <span class="key-38 num7">&#38;<br />7</span>
+                <span class="key-42 num8">&#42;<br />8</span>
+                <span class="key-40 num9">&#40;<br />9</span>
+                <span class="key-41 num0">&#41;<br />0</span>
+                <span class="key-45 key-95">&#45;<br />&#95;</span>
+                <span class="key-43 key-61">&#43;<br />&#61;</span>
+                <span class="key-backspace">Backspace</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-tab on">Tab ↹</span>
+                <span class="key-q">Q</span>
+                <span class="key-w">W</span>
+                <span class="key-e">E</span>
+                <span class="key-r">R</span>
+                <span class="key-t">T</span>
+                <span class="key-u">Y</span>
+                <span class="key-i">U</span>
+                <span class="key-y">I</span>
+                <span class="key-o">O</span>
+                <span class="key-p">P</span>
+                <span class="key-123 key-91">&#123;<br />&#91;</span>
+                <span class="key-125 key-93">&#125;<br />&#93;</span>
+                <span class="key-124 key-92">&#124;<br />&#92;</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-caps">Caps Lock</span>
+                <span class="key-a">A</span>
+                <span class="key-s">S</span>
+                <span class="key-d">D</span>
+                <span class="key-f">F</span>
+                <span class="key-g">G</span>
+                <span class="key-h">H</span>
+                <span class="key-j">J</span>
+                <span class="key-k">K</span>
+                <span class="key-l">L</span>
+                <span class="key-58 key-59">&#58;<br />&#59;</span>
+                <span class="key-34 key-39">&#34;<br />&#39;</span>
+                <span class="key-enter">↵ Enter</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-shift-left">Shift ⇧</span>
+                <span class="key-z">Z</span>
+                <span class="key-x">X</span>
+                <span class="key-c">C</span>
+                <span class="key-v">V</span>
+                <span class="key-b">B</span>
+                <span class="key-n">N</span>
+                <span class="key-m">M</span>
+                <span class="key-60 key-44">&#60;<br />&#44;</span>
+                <span class="key-62 key-46">&#62;<br />&#46;</span>
+                <span class="key-63 key-47">&#63;<br />&#47;</span>
+                <span class="key-shift-right">⇧ Shift</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-ctrl">Ctrl</span>
+                <span class="key-fn">Fn</span>
+                <span class="key-win">win</span>
+                <span class="key-alt">Alt</span>
+                <span class="key-space">Space Bar</span>
+                <span class="key-ke">한/영</span>
+                <span class="key-alt">Alt</span>
+                <span class="key-win">win</span>
+                <span class="key-ctrl">Ctrl</span>
+              </div>
+            </div>
+            <div class="keyboard-col">
+              <div class="keyboard-row">
+                <span class="key-insert">Insest</span>
+                <span class="key-home">Home</span>
+                <span class="key-page-up">Page<br />Up</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-delete">Delete</span>
+                <span class="key-end">End</span>
+                <span class="key-page-down">Page<br />Down</span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-empty"></span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-empty"></span>
+                <span class="key-up">&#8593;</span>
+                <span class="key-empty"></span>
+              </div>
+              <div class="keyboard-row">
+                <span class="key-left on">&#8592;</span>
+                <span class="key-down">&#8595;</span>
+                <span class="key-right">&#8594;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="cont-popup">
+      <div class="box-popup popup-start">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <p class="desc-game">게임에 대한 설명</p>
+          <ul class="list-btn">
+            <li>
+              <button type="button" class="btn-dropdown">
+                프로그래밍 언어
+              </button>
+              <ul class="sub-list">
+                <li><button type="button" class="btn-lan">HTML</button></li>
+                <li><button type="button" class="btn-lan">CSS</button></li>
+                <li>
+                  <button type="button" class="btn-lan">JavaScript</button>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button type="button" class="btn-start">게임 시작하기</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box-popup popup-win">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <img src="images/you_win.png" alt="You Win!" class="img-result" />
+          <!-- <p class="txt-result">You Win!</p> -->
+          <p class="desc-game">축하합니다! 레벨 n 도전에 성공했습니다!!</p>
+          <button type="button" class="btn-next">다음 레벨 도전하기</button>
+        </div>
+      </div>
+
+      <div class="box-popup popup-lose">
+        <div class="title-bar">
+          알 림
+          <button type="button" class="btn-close-popup"></button>
+        </div>
+        <div class="body-popup">
+          <img src="images/game_over.png" alt="You Win!" class="img-result" />
+          <p class="desc-game">게임에 대한 설명</p>
+          <ul class="list-btn">
+            <li>
+              <button type="button" class="btn-start">처음부터 다시하기</button>
+            </li>
+            <li>
+              <button type="button" class="btn-start">다시 도전하기</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

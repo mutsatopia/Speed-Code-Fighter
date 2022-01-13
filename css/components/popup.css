@@ -1,0 +1,122 @@
+.cont-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cont-popup .box-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  border: var(--border);
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+.cont-popup .popup-start,
+.cont-popup .popup-win,
+.cont-popup .popup-lose {
+  display: none;
+}
+.box-popup .title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 8px 0;
+  border-bottom: var(--border);
+}
+.box-popup .title-bar .btn-close-popup {
+  position: absolute;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  margin-left: 8px;
+  box-sizing: border-box;
+  border: 0;
+  background: url("../../images/close.svg") no-repeat;
+  background-size: 100%;
+}
+.box-popup .body-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 225px;
+  padding: 20px;
+}
+.popup-start .desc-game {
+  margin: 90px 0;
+}
+.body-popup .list-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.list-btn li {
+  position: relative;
+  width: 49%;
+}
+.list-btn li > button {
+  width: 100%;
+  padding: 6px 0;
+  background: none;
+  font-family: var(--main-font);
+}
+.list-btn .btn-dropdown {
+  background: url("../../images/caret-down-fill.svg") no-repeat 90% 50%;
+}
+.list-btn button[class^="btn"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+.list-btn .sub-list {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: 0;
+  left: 0;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+.sub-list li {
+  width: 100%;
+}
+.sub-list .btn-lan {
+  padding: 8px;
+  border: 0;
+}
+.list-btn .btn-dropdown:hover + .sub-list {
+  display: block;
+}
+.body-popup .img-result {
+  width: 30%;
+}
+.popup-win .desc-game,
+.popup-lose .desc-game {
+  margin: 35px 0 30px;
+}
+.popup-win .btn-next {
+  width: 100%;
+  padding: 8px;
+  background: none;
+  font-family: var(--main-font);
+}
+.popup-win .btn-next:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.cont-popup.show {
+  display: block;
+}
+.cont-popup.show .popup-start.show,
+.cont-popup.show .popup-win.show,
+.cont-popup.show .popup-lose.show {
+  display: block;
+}
