@@ -1,9 +1,7 @@
 const RANDOM_QUOTE_API_URL = [
-  `hello`,
-  `hey`,
-  `hi`,
-  `bye`,
-  `html {\n\u00a0\u00a0\u00a0font-family: sans-serif;\n\u00a0\u00a0\u00a0-webkit-text-size-adjust: 100%;\n\u00a0\u00a0\u00a0-ms-text-size-adjust: 100%\n}\nbody {\n\u00a0\u00a0\u00a0margin: 0\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n\u00a0\u00a0\u00a0display: block\n}\naudio,\ncanvas,\nprogress,\nvideo {\n\u00a0\u00a0\u00a0display: inline-block;\n\u00a0\u00a0\u00a0vertical-align: baseline\n}\naudio:not([controls]) {\n\u00a0\u00a0\u00a0display: none;\n\u00a0\u00a0\u00a0height: 0\n}\n[hidden],\ntemplate {\n\u00a0\u00a0\u00a0display: none\n}\na {\n\u00a0\u00a0\u00a0background-color: transparent\n}\na:active,\na:hover {\n\u00a0\u00a0\u00a0outline: 0\n}\n`,
+  `<div>\n\u00a0\u00a0\u00a0hellow\n</div>`,
+  `<header>\n\u00a0\u00a0\u00a0<h1>헤더 입니다</h1>\n</header>`,
+  `<!DOCTYPE html>\n<html lang="ko">\n<head>\n\u00a0\u00a0\u00a0<meta charset="UTF-8">\n\u00a0\u00a0\u00a0<meta http-equiv="X-UA-Compatible" content="IE=edge">\n\u00a0\u00a0\u00a0<meta name="viewport" content="width=device-width, initial-scale=1.0">\n\u00a0\u00a0\u00a0<title></title>\n\u00a0\u00a0\u00a0<style></style>\n</head>\n<body>\n</body>\n</html>`,
 ];
 
 const quoteDisplayElement = document.getElementById("quoteDisplay");
@@ -16,9 +14,9 @@ const levelElement = document.querySelector(".level");
 
 let level = 0;
 
-window.addEventListener('click',function() {
-  quoteInputElement.focus()
-})
+window.addEventListener("click", function () {
+  quoteInputElement.focus();
+});
 function startGame() {
   const arrayQuote = quoteDisplayElement.querySelectorAll("span");
   const arrayValue = quoteInputElement.value.split("");
