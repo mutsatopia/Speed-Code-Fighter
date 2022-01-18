@@ -4,7 +4,7 @@
 
 모바일 환경에서 이용하는 이용자보다 태블릿이나 pc 에서 사용하는 이용자가 더 많을 것으로 예상하여 PC만 대응하도록 설계했습니다.
 
-- URL 넣는 공간
+서비스 링크 : https://d27biwahleug4i.cloudfront.net/
 
 <br>
 
@@ -66,7 +66,7 @@
 
 - 배포
 
-  - github
+  - AWS
 
 - 협업
   - Notion, Discord
@@ -91,11 +91,17 @@
 │          popup.css
 │
 ├─images
+│      caret-down-fill.svg
+│      close.svg
+│      dot.svg
+│      favicon.ico
+│      game_over.png
+│      logo.png
+│      Thumbs.db
+│      you_win.png
 │
 └─js
-        script.js
-
-  index.html
+       script.js
 ```
 
 ### 3.2 개발일정
